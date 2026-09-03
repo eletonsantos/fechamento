@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — IA Assist Fechamento</title>
+<style>
+:root{
+  --fundo:#FBFBFA; --papel:#FFFFFF; --linha:#E2E5E4; --linha-forte:#C8CFCD;
+  --tinta:#1A2329; --tinta2:#48575F; --tinta3:#71818A;
+  --acento:#0F5C63; --acento-fraco:#EAF2F1; --alerta-bg:#FBF3E2; --alerta:#7A5608;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --fundo:#12191D; --papel:#182126; --linha:#2A363C; --linha-forte:#3A484F;
+    --tinta:#E5EBEA; --tinta2:#AEBDBE; --tinta3:#849699;
+    --acento:#6FC4C2; --acento-fraco:#1B3235; --alerta-bg:#2E2714; --alerta:#D9AF54;
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--fundo); color:var(--tinta);
+  font:16px/1.65 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.pagina{max-width:760px; margin:0 auto; padding:48px 24px 80px}
+header{border-bottom:2px solid var(--linha-forte); padding-bottom:20px; margin-bottom:36px}
+h1{font-size:28px; line-height:1.2; margin:0 0 10px; letter-spacing:-.02em}
+.sub{color:var(--tinta2); margin:0; font-size:15px}
+.meta{
+  margin-top:16px; font-size:13px; color:var(--tinta3);
+  font-family:ui-monospace,Consolas,monospace;
+}
+h2{
+  font-size:19px; margin:38px 0 12px; letter-spacing:-.01em;
+  padding-top:18px; border-top:1px solid var(--linha);
+}
+h2:first-of-type{border-top:none; padding-top:0}
+h3{font-size:16px; margin:24px 0 8px}
+p{margin:0 0 14px}
+ul{margin:0 0 14px; padding-left:22px}
+li{margin-bottom:7px}
+strong{font-weight:600}
+code{
+  font-family:ui-monospace,Consolas,monospace; font-size:.88em;
+  background:var(--acento-fraco); padding:.1em .35em; border-radius:3px;
+}
+.destaque{
+  background:var(--acento-fraco); border-left:3px solid var(--acento);
+  padding:16px 18px; margin:0 0 20px; border-radius:0 4px 4px 0;
+}
+.destaque p:last-child{margin-bottom:0}
+.tabela{overflow-x:auto; margin:0 0 20px}
+table{border-collapse:collapse; width:100%; min-width:520px; font-size:14.5px}
+th,td{text-align:left; padding:10px 14px 10px 0; border-bottom:1px solid var(--linha); vertical-align:top}
+th{font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--tinta3); border-bottom:1px solid var(--linha-forte)}
+td code{white-space:nowrap}
+footer{margin-top:48px; padding-top:20px; border-top:2px solid var(--linha-forte); font-size:14px; color:var(--tinta3)}
+a{color:var(--acento)}
+</style>
+</head>
+<body>
+<div class="pagina">
+
+<header>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">Extensão <strong>IA Assist — Fechamento</strong> para Google Chrome</p>
+  <p class="meta">Última atualização: 2 de setembro de 2026</p>
+</header>
+
+
+<h2>Resumo</h2>
+
+<div class="destaque">
+  <p>A extensão <strong>não coleta dados pessoais</strong>, <strong>não acessa
+  credenciais</strong> e <strong>não envia informação alguma para servidores</strong>.
+  Tudo o que ela guarda fica no navegador do próprio usuário.</p>
+</div>
+
+<p>Ela lê números de ordem de serviço e valores já exibidos na tela dos sistemas
+que a empresa usa, e os digita no portal da companhia contratante — automatizando
+uma digitação que a pessoa faria à mão.</p>
+
+<h2>Quem somos</h2>
+
+<p>Esta extensão é desenvolvida e mantida por <strong>IA Assist Inova Simples</strong>,
+CNPJ 61.765.490/0001-01. Para qualquer dúvida sobre privacidade, escreva para
+<strong>contato@iaassist.com.br</strong>.</p>
+
+<h2>Para que a extensão serve</h2>
+
+<p>Ela é uma ferramenta de trabalho interna, usada por empresas prestadoras de
+serviço de assistência que já possuem acesso autorizado aos sistemas envolvidos.
+Sua única finalidade é transferir dados de faturamento entre duas telas que o
+próprio usuário mantém abertas e nas quais já está autenticado.</p>
+
+<h2>Dados acessados</h2>
+
+<p>A extensão só age em três domínios, e apenas em telas específicas dentro
+deles:</p>
+
+<div class="tabela">
+<table>
+  <thead><tr><th>Domínio</th><th>Para quê</th></tr></thead>
+  <tbody>
+    <tr><td><code>*.ia-assist.com.br</code></td><td>ler os atendimentos já conferidos e marcar de volta os que foram lançados</td></tr>
+    <tr><td><code>*.juvo.com.br</code></td><td>lançar os atendimentos no portal da companhia</td></tr>
+    <tr><td><code>tms-prestador.tokiomarine.com.br</code></td><td>lançar os atendimentos no portal da companhia</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>O que é lido</h3>
+
+<p>Somente identificadores de ordem de serviço e valores financeiros já visíveis
+na tela:</p>
+
+<ul>
+  <li>número da ordem de serviço e do atendimento</li>
+  <li>valores de mão de obra, material, pedágio, quilometragem e total</li>
+  <li>região, cidade, empresa contratante e situação do atendimento</li>
+</ul>
+
+<h3>O que <em>não</em> é lido</h3>
+
+<div class="destaque">
+  <p>A extensão <strong>não lê</strong> nome de segurado, CPF, CNPJ de pessoa
+  física, endereço, telefone, e-mail, dado bancário ou meio de pagamento —
+  mesmo quando essas informações estão na mesma página.</p>
+  <p>Ela também não acessa o histórico de navegação, favoritos, downloads, nem
+  qualquer outro site além dos três listados acima.</p>
+</div>
+
+<h2>Credenciais e sessão</h2>
+
+<p>A extensão <strong>nunca solicita, lê ou armazena senhas</strong>. Ela opera
+dentro da sessão que o próprio usuário já abriu no navegador, exatamente como se
+a pessoa estivesse clicando.</p>
+
+<p>Para confirmar que existe uma sessão ativa antes de agir, ela consulta um
+endereço do próprio sistema da empresa. O conteúdo dessa resposta — incluindo
+qualquer token — <strong>não é lido, não é guardado e não é transmitido</strong>:
+interessa apenas se a resposta veio ou não.</p>
+
+<h2>O que é armazenado, e onde</h2>
+
+<p>Todos os dados abaixo ficam <strong>exclusivamente no dispositivo do usuário</strong>,
+no armazenamento local da extensão. Nada é sincronizado, enviado ou copiado para
+fora do navegador.</p>
+
+<div class="tabela">
+<table>
+  <thead><tr><th>O quê</th><th>Por quê</th><th>Conteúdo</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Registro de lançados</td>
+      <td>impedir que o mesmo atendimento seja lançado duas vezes, o que geraria cobrança duplicada</td>
+      <td>número da ordem de serviço e data do lançamento</td>
+    </tr>
+    <tr>
+      <td>Registro de atividade</td>
+      <td>permitir conferir depois o que a ferramenta fez</td>
+      <td>últimas 600 linhas: números de ordem de serviço, valores e mensagens de erro</td>
+    </tr>
+    <tr>
+      <td>Execução em andamento</td>
+      <td>perceber se um lote foi interrompido no meio</td>
+      <td>lista de atendimentos da execução atual e o ponto em que parou</td>
+    </tr>
+    <tr>
+      <td>Configuração</td>
+      <td>lembrar as preferências do usuário</td>
+      <td>módulo escolhido e agendamento, quando usado</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Transmissão de dados</h2>
+
+<div class="destaque">
+  <p>A extensão <strong>não envia dados para servidor nenhum</strong> — nem do
+  desenvolvedor, nem de terceiros.</p>
+</div>
+
+<p>Quando configurada para verificação de licença, ela apenas <strong>baixa</strong>
+um arquivo de configuração do servidor do desenvolvedor. É uma requisição de
+leitura, sem parâmetros e sem corpo: nenhum dado da operação, do usuário ou da
+empresa é incluído. Como em qualquer acesso à internet, o servidor que hospeda
+esse arquivo registra o endereço IP e o identificador do navegador, conforme seus
+próprios registros técnicos.</p>
+
+<h2>Uso das informações</h2>
+
+<p>Os dados lidos são usados <strong>exclusivamente</strong> para preencher os
+campos do portal da companhia contratante, na mesma sessão e no mesmo dispositivo.</p>
+
+<p>Declaramos expressamente que <strong>não</strong>:</p>
+
+<ul>
+  <li>vendemos ou alugamos dados a terceiros;</li>
+  <li>transferimos dados para fora do propósito único da extensão;</li>
+  <li>usamos dados para publicidade, perfilamento ou avaliação de crédito;</li>
+  <li>usamos dados para treinar modelos de inteligência artificial.</li>
+</ul>
+
+<h2>Permissões solicitadas</h2>
+
+<div class="tabela">
+<table>
+  <thead><tr><th>Permissão</th><th>Por que é necessária</th></tr></thead>
+  <tbody>
+    <tr><td><code>storage</code></td><td>guardar, no próprio dispositivo, o registro do que já foi lançado — é o que impede cobrança duplicada</td></tr>
+    <tr><td><code>tabs</code></td><td>localizar a aba que está na tela correta para ler e a que está no portal para escrever</td></tr>
+    <tr><td><code>scripting</code></td><td>ler os dados da tela e preencher os campos do portal</td></tr>
+    <tr><td><code>sidePanel</code></td><td>exibir o painel onde o usuário confere a fila e acompanha a execução</td></tr>
+    <tr><td><code>alarms</code></td><td>retomar uma execução programada pelo usuário no horário escolhido</td></tr>
+    <tr><td>acesso aos três domínios</td><td>agir apenas nos sistemas listados; a extensão não tem acesso a nenhum outro site</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Retenção e exclusão</h2>
+
+<p>Os dados permanecem no dispositivo até que o usuário os apague. Há duas formas:</p>
+
+<ul>
+  <li>no painel da extensão, o comando <strong>Esquecer lançados</strong> apaga o
+  registro de atendimentos já processados;</li>
+  <li>remover a extensão pelo navegador apaga <strong>todo</strong> o armazenamento
+  local associado a ela.</li>
+</ul>
+
+<p>Como nada é enviado para servidores, não há dados sob nossa guarda para
+solicitar exclusão. Ainda assim, pedidos relacionados à LGPD podem ser enviados
+para contato@iaassist.com.br.</p>
+
+<h2>Crianças e adolescentes</h2>
+
+<p>Esta é uma ferramenta corporativa, destinada a profissionais no exercício de
+suas funções. Não é direcionada a menores de 18 anos e não coleta
+intencionalmente dados de crianças ou adolescentes.</p>
+
+<h2>Alterações nesta política</h2>
+
+<p>Se a extensão passar a acessar outros sistemas ou outros tipos de dado, esta
+política será atualizada antes da mudança entrar em vigor, e a data no topo
+refletirá a revisão.</p>
+
+<h2>Contato</h2>
+
+<p>IA Assist Inova Simples — CNPJ 61.765.490/0001-01<br>
+Dúvidas sobre privacidade: <strong>contato@iaassist.com.br</strong></p>
+
+<footer>
+  Política de Privacidade da extensão IA Assist — Fechamento.
+  Última atualização: 2 de setembro de 2026.
+</footer>
+
+</div>
+</body>
+</html>
