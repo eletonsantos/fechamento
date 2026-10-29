@@ -65,16 +65,17 @@ a{color:var(--acento)}
 <header>
   <h1>Política de Privacidade</h1>
   <p class="sub">Extensão <strong>IA Assist — Fechamento</strong> para Google Chrome</p>
-  <p class="meta">Última atualização: 2 de setembro de 2026</p>
+  <p class="meta">Última atualização: 28 de outubro de 2026</p>
 </header>
-
 
 <h2>Resumo</h2>
 
 <div class="destaque">
-  <p>A extensão <strong>não coleta dados pessoais</strong>, <strong>não acessa
-  credenciais</strong> e <strong>não envia informação alguma para servidores</strong>.
-  Tudo o que ela guarda fica no navegador do próprio usuário.</p>
+  <p>A extensão <strong>não coleta dados pessoais</strong> e <strong>não acessa
+  credenciais</strong>. Ela envia ao suporte do desenvolvedor apenas um
+  <strong>registro de uso</strong> — quantas vezes foi usada, o que foi lançado
+  com sucesso e o que deu erro — sem nome, telefone, endereço, CPF ou e-mail de
+  ninguém. O restante fica no navegador do próprio usuário.</p>
 </div>
 
 <p>Ela lê números de ordem de serviço e valores já exibidos na tela dos sistemas
@@ -144,9 +145,8 @@ interessa apenas se a resposta veio ou não.</p>
 
 <h2>O que é armazenado, e onde</h2>
 
-<p>Todos os dados abaixo ficam <strong>exclusivamente no dispositivo do usuário</strong>,
-no armazenamento local da extensão. Nada é sincronizado, enviado ou copiado para
-fora do navegador.</p>
+<p>Os dados abaixo ficam no armazenamento local da extensão, no dispositivo do
+usuário. O que é enviado ao suporte está descrito em "Transmissão de dados".</p>
 
 <div class="tabela">
 <table>
@@ -172,6 +172,11 @@ fora do navegador.</p>
       <td>lembrar as preferências do usuário</td>
       <td>módulo escolhido e agendamento, quando usado</td>
     </tr>
+    <tr>
+      <td>Gravações de aprendizado</td>
+      <td>ensinar a extensão a lançar num portal e medir o tempo de um lançamento feito à mão</td>
+      <td>últimas 15 gravações: campos e botões usados na tela do portal, sem os valores digitados, e o tempo de cada lançamento</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -179,9 +184,40 @@ fora do navegador.</p>
 <h2>Transmissão de dados</h2>
 
 <div class="destaque">
-  <p>A extensão <strong>não envia dados para servidor nenhum</strong> — nem do
-  desenvolvedor, nem de terceiros.</p>
+  <p>A extensão envia ao servidor do desenvolvedor <strong>somente o registro de
+  uso</strong> descrito abaixo. Nada é enviado a terceiros, e nenhuma senha,
+  credencial ou dado pessoal é incluído.</p>
 </div>
+
+<p><strong>Registro de uso.</strong> Para o suporte saber quem está usando a
+ferramenta, quantas vezes, e o que deu certo ou errado sem precisar pedir
+arquivos ao cliente, a extensão envia: um identificador aleatório da instalação
+(não identifica a pessoa), a versão, a empresa (o endereço do sistema IA Assist
+em uso), o portal, o número da ordem de serviço, a senha e a tarifa do serviço,
+o valor, o resultado de cada lançamento (lançado, recusado, com erro…) e a
+mensagem que o portal exibiu. Antes do envio, mensagens passam por um filtro
+que remove nomes após rótulos como "Segurado:", telefones, e-mails, CPF e CNPJ.</p>
+
+<p><strong>Gravações de aprendizado.</strong> Sempre que há atendimentos buscados
+no sistema IA Assist e a aba do portal da companhia está aberta, a extensão
+registra automaticamente quais campos e botões foram usados nos lançamentos
+feitos à mão naquele portal, e quanto tempo cada lançamento levou (pausas longas
+são descontadas). Ela não grava enquanto ela mesma está lançando, nem em nenhum
+outro site. O painel da extensão mostra quando o aprendizado está ativo, e ele
+pode ser desligado a qualquer momento em "Aprendizado e tempo deste portal →
+Desligar o aprendizado neste computador"; ao desligar, o trecho em curso é
+descartado. A empresa que usa a extensão deve informar seus operadores de que
+esse registro existe. O que foi digitado <strong>não</strong> é registrado:
+quando coincide com um dado do sistema IA Assist, fica apenas o nome do dado
+(por exemplo, "número da assistência"); caso contrário, apenas o tamanho do texto.
+Também são registradas as mensagens curtas que o portal exibiu em resposta
+(por exemplo, "lançamento realizado com sucesso"), com números longos, placas e
+o que vem depois de rótulos como "Segurado:" removidos. Campos de senha e telas
+de login nunca são gravados.</p>
+
+<p>Esses registros são guardados por <strong>12 meses</strong> em servidor
+contratado pelo desenvolvedor (Supabase) e acessados apenas pela equipe de
+suporte, para corrigir falhas e preparar novos portais.</p>
 
 <p>Quando configurada para verificação de licença, ela apenas <strong>baixa</strong>
 um arquivo de configuração do servidor do desenvolvedor. É uma requisição de
@@ -192,8 +228,9 @@ próprios registros técnicos.</p>
 
 <h2>Uso das informações</h2>
 
-<p>Os dados lidos são usados <strong>exclusivamente</strong> para preencher os
-campos do portal da companhia contratante, na mesma sessão e no mesmo dispositivo.</p>
+<p>Os dados lidos são usados para preencher os campos do portal da companhia
+contratante, na mesma sessão e no mesmo dispositivo, e — na forma reduzida
+descrita acima — para o registro de uso enviado ao suporte.</p>
 
 <p>Declaramos expressamente que <strong>não</strong>:</p>
 
@@ -216,6 +253,7 @@ campos do portal da companhia contratante, na mesma sessão e no mesmo dispositi
     <tr><td><code>sidePanel</code></td><td>exibir o painel onde o usuário confere a fila e acompanha a execução</td></tr>
     <tr><td><code>alarms</code></td><td>retomar uma execução programada pelo usuário no horário escolhido</td></tr>
     <tr><td>acesso aos três domínios</td><td>agir apenas nos sistemas listados; a extensão não tem acesso a nenhum outro site</td></tr>
+    <tr><td>acesso opcional a outros portais (Fácil Assist, Mondial)</td><td>só é concedido se o usuário clicar em "Liberar acesso ao portal" e confirmar no navegador; serve para lançar ou gravar o aprendizado naquele portal</td></tr>
   </tbody>
 </table>
 </div>
@@ -231,9 +269,9 @@ campos do portal da companhia contratante, na mesma sessão e no mesmo dispositi
   local associado a ela.</li>
 </ul>
 
-<p>Como nada é enviado para servidores, não há dados sob nossa guarda para
-solicitar exclusão. Ainda assim, pedidos relacionados à LGPD podem ser enviados
-para contato@iaassist.com.br.</p>
+<p>O registro de uso enviado ao suporte é apagado automaticamente após 12 meses.
+Pedidos de exclusão antecipada ou outros pedidos relacionados à LGPD podem ser
+enviados para contato@iaassist.com.br.</p>
 
 <h2>Crianças e adolescentes</h2>
 
@@ -254,7 +292,7 @@ Dúvidas sobre privacidade: <strong>contato@iaassist.com.br</strong></p>
 
 <footer>
   Política de Privacidade da extensão IA Assist — Fechamento.
-  Última atualização: 2 de setembro de 2026.
+  Última atualização: 28 de outubro de 2026.
 </footer>
 
 </div>
