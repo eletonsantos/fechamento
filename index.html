@@ -215,6 +215,14 @@ Também são registradas as mensagens curtas que o portal exibiu em resposta
 o que vem depois de rótulos como "Segurado:" removidos. Campos de senha e telas
 de login nunca são gravados.</p>
 
+<p><strong>Diagnóstico de falhas.</strong> Quando um lançamento é interrompido por
+erro (sessão expirada, tela errada, erros seguidos ou falha interna), a extensão
+envia automaticamente ao suporte as linhas do registro de atividade daquela
+execução e os avisos novos do portal que apareceram nela — o mesmo conteúdo do
+"Exportar diagnóstico", para que o problema possa ser corrigido sem o usuário
+precisar enviar o arquivo. Essas linhas passam pelo mesmo filtro descrito acima
+(nomes após rótulos, telefones, e-mails, CPF e CNPJ são removidos).</p>
+
 <p>Esses registros são guardados por <strong>12 meses</strong> em servidor
 contratado pelo desenvolvedor (Supabase) e acessados apenas pela equipe de
 suporte, para corrigir falhas e preparar novos portais.</p>
